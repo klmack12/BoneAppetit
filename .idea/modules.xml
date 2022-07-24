@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/BoneAppetit.iml" filepath="$PROJECT_DIR$/.idea/BoneAppetit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BoneAppetit.iml" filepath="$PROJECT_DIR$/.idea/modules/BoneAppetit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BoneAppetit.app.unitTest.iml" />
     </modules>
   </component>
 </project>
