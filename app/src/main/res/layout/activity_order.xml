@@ -2,36 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:background="#AC98D1"
+    android:gravity="center"
+    android:orientation="vertical">
 
         <TextView
-            android:layout_height="wrap_content"
+            android:id="@+id/hello"
             android:layout_width="wrap_content"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Hello, "
+            android:textSize="20sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10sp"
-             android:text="Pick some treats">
+            android:text="Pick some Treats"
+            android:textSize="20sp"
+            android:textStyle="bold">
 
         </TextView>
 
         <LinearLayout
             android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/treat1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="treat1"
+                    android:layout_marginLeft="10dp"
                     android:checked="false"
-                    android:id="@+id/treat1">
-                </CheckBox>
+                    android:text="Dipped Bones \n $4.00"></CheckBox>
+
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/dogbone">
-                </ImageView>
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/dippedbones"></ImageView>
 
         </LinearLayout>
 
@@ -41,79 +52,96 @@
             android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/treat2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="treat2"
+                    android:layout_marginLeft="10dp"
                     android:checked="false"
-                    android:id="@+id/treat2">
-        </CheckBox>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/dogbone">
-        </ImageView>
+                    android:text="Peanut Butter \n Bacon Bones \n $3.00"
+                    android:textColorHighlight="#673AB7"
+                    android:textColorLink="#673AB7"></CheckBox>
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/peanutbutterbacon"></ImageView>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/treat3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="treat3"
+                    android:layout_marginLeft="10dp"
                     android:checked="false"
-                    android:id="@+id/treat3">
-                </CheckBox>
+                    android:text="Bully Sticks"></CheckBox>
+
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/dogbone">
-                </ImageView>
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/bullysticks"></ImageView>
+
                 <RadioGroup
+                    android:id="@+id/treat3Choices"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/treat3Choices">
+                    android:layout_height="wrap_content">
+
                         <RadioButton
+                            android:id="@+id/treat3Large"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="false"
-                            android:id="@+id/treat3Large">
-                        </RadioButton>
+                            android:text="Large \n $5.00"></RadioButton>
+
                         <RadioButton
+                            android:id="@+id/treat3Med"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:checked="false"
-                            android:id="@+id/treat3Med">
-                        </RadioButton>
+                            android:text="Medium \n $4.00"></RadioButton>
+
                         <RadioButton
+                            android:id="@+id/treat3Small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+
                             android:checked="false"
-                            android:id="@+id/treat3Small">
-                        </RadioButton>
+                            android:text="Small \n $3.00"
+                            android:textColorHighlight="#673AB7"
+                            android:textColorLink="#673AB7"></RadioButton>
                 </RadioGroup>
 
         </LinearLayout>
 
         <Button
-            android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:text="Calculate Total"
-                android:id="@+id/calc">
-
-        </Button>
-
-        <TextView
+            android:id="@+id/calc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-                android:id="@+id/totalView">
+            android:backgroundTint="#D34173"
+            android:text="CALCULATE TOTAL"></Button>
+
+        <TextView
+            android:id="@+id/totalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
         </TextView>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitOrder"
+            android:backgroundTint="#D34173"
+            android:text="SUBMIT ORDER" />
 
 
-    </LinearLayout>
+</LinearLayout>
 
 
 
